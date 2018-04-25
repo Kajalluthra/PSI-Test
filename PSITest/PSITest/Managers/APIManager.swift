@@ -26,7 +26,7 @@ class APIManager {
     func getPSIData(completed:@escaping (_ success: Bool, _ response: Any?, _ error: String?) -> Void)  {
         
         if !Connectivity.isConnectedToInternet() {
-            // Add alert
+            completed(false, nil, Constants.APIErrors.noInterent.rawValue)
             return
         }
         
@@ -37,11 +37,18 @@ class APIManager {
                            encoding: URLEncoding.default,
                            headers: nil).validate().responseJSON { response in
                             
-                            // handle response
                             if response.result.isSuccess {
-                               
+                                if let json = response.result.value as? [String: Any] {
+                                    let dicJson = json as NSDictionary
+                                    completed(true, dicJson, nil)
+                                }
                             } else  {
-                              
+                                if let statusCode = response.response?.statusCode,
+                                    let reason = Constants.APIFailureReason(rawValue: statusCode) {
+                                    completed(false, nil, reason.localizedDescription)
+                                } else {
+                                    completed(false, nil, Constants.APIErrors.somethingWrong.rawValue)
+                                }
                             }
                             
         }

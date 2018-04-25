@@ -50,3 +50,15 @@ extension HomeViewController {
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
     }*/
 }
+
+//MARK:- HomeViewController Protocol Method
+extension HomeViewController : HomeManagerDelegate {
+    
+    @objc internal func didUpdateHomeMarkers() {
+        //update pins
+    }
+    
+    @objc internal func didUpdateErrorWithAlert( error: String){
+        //show error
+    }
+}

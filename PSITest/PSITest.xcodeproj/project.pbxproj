@@ -11,6 +11,7 @@
 		9E0F268F2090815800DEF3A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F268E2090815800DEF3A3 /* Constants.swift */; };
 		9E0F2692209084B800DEF3A3 /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F2691209084B800DEF3A3 /* HomeManager.swift */; };
 		9E0F26942090851C00DEF3A3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F26932090851C00DEF3A3 /* APIManager.swift */; };
+		9E0F269720908FD300DEF3A3 /* PSIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F269620908FD300DEF3A3 /* PSIModel.swift */; };
 		9E7B3B1B20907115006C7205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1A20907115006C7205 /* AppDelegate.swift */; };
 		9E7B3B1D20907115006C7205 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1C20907115006C7205 /* HomeViewController.swift */; };
 		9E7B3B2020907115006C7205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1E20907115006C7205 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		9E0F268E2090815800DEF3A3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9E0F2691209084B800DEF3A3 /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
 		9E0F26932090851C00DEF3A3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		9E0F269620908FD300DEF3A3 /* PSIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIModel.swift; sourceTree = "<group>"; };
 		9E7B3B1720907115006C7205 /* PSITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7B3B1A20907115006C7205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E7B3B1C20907115006C7205 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,14 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		9E0F269520908FB100DEF3A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E0F269620908FD300DEF3A3 /* PSIModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9E7B3B0E20907115006C7205 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +158,7 @@
 		9E7B3B1920907115006C7205 /* PSITest */ = {
 			isa = PBXGroup;
 			children = (
+				9E0F269520908FB100DEF3A3 /* Model */,
 				9E0F2690209084A100DEF3A3 /* Managers */,
 				9E0F268C209080C200DEF3A3 /* ViewControllers */,
 				9E0F268B209080B900DEF3A3 /* AppDelegate */,
@@ -355,6 +366,7 @@
 				9E7B3B1D20907115006C7205 /* HomeViewController.swift in Sources */,
 				9E0F26942090851C00DEF3A3 /* APIManager.swift in Sources */,
 				9E7B3B1B20907115006C7205 /* AppDelegate.swift in Sources */,
+				9E0F269720908FD300DEF3A3 /* PSIModel.swift in Sources */,
 				9E0F268F2090815800DEF3A3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
