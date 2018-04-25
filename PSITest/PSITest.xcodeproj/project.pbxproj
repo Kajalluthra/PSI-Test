@@ -17,6 +17,11 @@
 		9E0F26A02090AF7300DEF3A3 /* MarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F269F2090AF7300DEF3A3 /* MarkerView.xib */; };
 		9E0F26A22090B1B400DEF3A3 /* UIAlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F26A12090B1B400DEF3A3 /* UIAlertExtension.swift */; };
 		9E0F26A42090BA9D00DEF3A3 /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F2691209084B800DEF3A3 /* HomeManager.swift */; };
+		9E0F26A72090CE1C00DEF3A3 /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F26A62090CE1C00DEF3A3 /* APIManagerTests.swift */; };
+		9E0F26A82090CEF300DEF3A3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F26932090851C00DEF3A3 /* APIManager.swift */; };
+		9E0F26A92090D09A00DEF3A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F268E2090815800DEF3A3 /* Constants.swift */; };
+		9E0F26AE2090D1D100DEF3A3 /* PSIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F269620908FD300DEF3A3 /* PSIModel.swift */; };
+		9E0F26B02090D34300DEF3A3 /* PSIModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F26AF2090D34300DEF3A3 /* PSIModelTests.swift */; };
 		9E7B3B1B20907115006C7205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1A20907115006C7205 /* AppDelegate.swift */; };
 		9E7B3B1D20907115006C7205 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1C20907115006C7205 /* HomeViewController.swift */; };
 		9E7B3B2020907115006C7205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1E20907115006C7205 /* Main.storyboard */; };
@@ -51,6 +56,8 @@
 		9E0F269D2090AF6400DEF3A3 /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
 		9E0F269F2090AF7300DEF3A3 /* MarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkerView.xib; sourceTree = "<group>"; };
 		9E0F26A12090B1B400DEF3A3 /* UIAlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertExtension.swift; sourceTree = "<group>"; };
+		9E0F26A62090CE1C00DEF3A3 /* APIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTests.swift; sourceTree = "<group>"; };
+		9E0F26AF2090D34300DEF3A3 /* PSIModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIModelTests.swift; sourceTree = "<group>"; };
 		9E7B3B1720907115006C7205 /* PSITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7B3B1A20907115006C7205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E7B3B1C20907115006C7205 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +164,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9E0F26AA2090D11600DEF3A3 /* APIManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E0F26A62090CE1C00DEF3A3 /* APIManagerTests.swift */,
+			);
+			path = APIManagerTests;
+			sourceTree = "<group>";
+		};
+		9E0F26AB2090D19800DEF3A3 /* PSIModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E0F26AF2090D34300DEF3A3 /* PSIModelTests.swift */,
+			);
+			path = PSIModelTests;
+			sourceTree = "<group>";
+		};
 		9E7B3B0E20907115006C7205 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +220,8 @@
 		9E7B3B2E20907115006C7205 /* PSITestTests */ = {
 			isa = PBXGroup;
 			children = (
+				9E0F26AB2090D19800DEF3A3 /* PSIModelTests */,
+				9E0F26AA2090D11600DEF3A3 /* APIManagerTests */,
 				9E7B3B2F20907115006C7205 /* PSITestTests.swift */,
 				9E7B3B3120907115006C7205 /* Info.plist */,
 			);
@@ -234,6 +259,7 @@
 				9E7B3B2720907115006C7205 /* Sources */,
 				9E7B3B2820907115006C7205 /* Frameworks */,
 				9E7B3B2920907115006C7205 /* Resources */,
+				ECF5C8FC64E3DBAD036E01DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,7 +278,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Kajal;
 				TargetAttributes = {
 					9E7B3B1620907115006C7205 = {
@@ -362,6 +388,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ECF5C8FC64E3DBAD036E01DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PSITestTests/Pods-PSITestTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PSITestTests/Pods-PSITestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F6BFCBF39B61A2ED00A37AC7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,7 +449,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E0F26A82090CEF300DEF3A3 /* APIManager.swift in Sources */,
+				9E0F26A72090CE1C00DEF3A3 /* APIManagerTests.swift in Sources */,
 				9E7B3B3020907115006C7205 /* PSITestTests.swift in Sources */,
+				9E0F26AE2090D1D100DEF3A3 /* PSIModel.swift in Sources */,
+				9E0F26B02090D34300DEF3A3 /* PSIModelTests.swift in Sources */,
+				9E0F26A92090D09A00DEF3A3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +502,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -458,6 +510,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -508,6 +561,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -515,6 +569,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
