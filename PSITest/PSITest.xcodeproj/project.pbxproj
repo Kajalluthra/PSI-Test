@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4B6B2383DA3C22793851620C /* Pods_PSITestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA75673889CF325D4E29E2D /* Pods_PSITestTests.framework */; };
 		9E0F268F2090815800DEF3A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F268E2090815800DEF3A3 /* Constants.swift */; };
+		9E0F2692209084B800DEF3A3 /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F2691209084B800DEF3A3 /* HomeManager.swift */; };
+		9E0F26942090851C00DEF3A3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F26932090851C00DEF3A3 /* APIManager.swift */; };
 		9E7B3B1B20907115006C7205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1A20907115006C7205 /* AppDelegate.swift */; };
 		9E7B3B1D20907115006C7205 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1C20907115006C7205 /* HomeViewController.swift */; };
 		9E7B3B2020907115006C7205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1E20907115006C7205 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 		3233E50E3427B3C8F30DDA15 /* Pods_PSITest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PSITest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		630AF22A50A8F222A60BD996 /* Pods-PSITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSITest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PSITest/Pods-PSITest.debug.xcconfig"; sourceTree = "<group>"; };
 		9E0F268E2090815800DEF3A3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9E0F2691209084B800DEF3A3 /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
+		9E0F26932090851C00DEF3A3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		9E7B3B1720907115006C7205 /* PSITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7B3B1A20907115006C7205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E7B3B1C20907115006C7205 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		9E0F2690209084A100DEF3A3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9E0F2691209084B800DEF3A3 /* HomeManager.swift */,
+				9E0F26932090851C00DEF3A3 /* APIManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		9E7B3B0E20907115006C7205 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +148,7 @@
 		9E7B3B1920907115006C7205 /* PSITest */ = {
 			isa = PBXGroup;
 			children = (
+				9E0F2690209084A100DEF3A3 /* Managers */,
 				9E0F268C209080C200DEF3A3 /* ViewControllers */,
 				9E0F268B209080B900DEF3A3 /* AppDelegate */,
 				9E0F268D2090813A00DEF3A3 /* Resources */,
@@ -337,7 +351,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E0F2692209084B800DEF3A3 /* HomeManager.swift in Sources */,
 				9E7B3B1D20907115006C7205 /* HomeViewController.swift in Sources */,
+				9E0F26942090851C00DEF3A3 /* APIManager.swift in Sources */,
 				9E7B3B1B20907115006C7205 /* AppDelegate.swift in Sources */,
 				9E0F268F2090815800DEF3A3 /* Constants.swift in Sources */,
 			);

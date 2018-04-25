@@ -20,4 +20,8 @@ struct Constants {
         case longitude = 103.82
     }
     
+    // API COnstants
+    static let baseURL = "https://api.data.gov.sg"
+    static let version = "v1"
+    
 }
