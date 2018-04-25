@@ -20,6 +20,7 @@ class HomeManager: NSObject {
     weak var delegate: HomeManagerDelegate?
     
     let apiManager = APIManager.shared()
+    let loadingInstance = LoadingView.newInstance()
     
     var location_array: [PSIModel] = [PSIModel]()
     var items_array: [PSIItems] = [PSIItems]()
@@ -32,6 +33,7 @@ class HomeManager: NSObject {
     // MARK:- Private Methods
     func requestToPSIApi() {
         
+        self.loadingInstance.show()
         apiManager.getPSIData(){(success, response, error) in
             if success {
                 let dictResponse = response as! NSDictionary
@@ -52,6 +54,7 @@ class HomeManager: NSObject {
             } else {
                 self.showAlert(errorList: error!.description)
             }
+            self.loadingInstance.hide()
         }
         
     }//end

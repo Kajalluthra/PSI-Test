@@ -11,6 +11,7 @@ import UIKit
 
 struct Constants {
     
+    static let loadingAnimation = 0.35
     static let googleKey = "AIzaSyDXCSyTi654n6HbdCSKiZhh-kfYilT3OFo"
     static let navBarColor = UIColor(red: 252.0/255.0, green: 92.0/255.0, blue: 99.0/255.0, alpha: 1.0)
     
