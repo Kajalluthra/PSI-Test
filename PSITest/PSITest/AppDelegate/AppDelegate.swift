@@ -25,7 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //API key for google maps
         GMSServices.provideAPIKey(Constants.googleKey)
-    
+        
+        //Navigation bar
+        UINavigationBar.appearance().barTintColor = Constants.navBarColor
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().barStyle = UIBarStyle.black
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
