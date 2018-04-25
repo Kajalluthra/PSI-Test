@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import GoogleMaps
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, GMSMapViewDelegate {
 
+    fileprivate var mapView: GMSMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,6 +24,13 @@ class HomeViewController: UIViewController {
     func setupUI(){
         
         self.title = "PSI READINGS"
+        
+        let camera = GMSCameraPosition.camera(withLatitude: Constants.SingaporeLocation.latitude.rawValue, longitude: Constants.SingaporeLocation.longitude.rawValue, zoom: 10.4) // Singapore
+        self.mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        view = self.mapView
+        self.mapView.delegate = self
+  
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,3 +41,12 @@ class HomeViewController: UIViewController {
 
 }
 
+//MARK:- GMSMapViewDelegate
+extension HomeViewController {
+    /*
+    func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
+    }
+    
+    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
+    }*/
+}
