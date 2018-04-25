@@ -11,7 +11,7 @@ import GoogleMaps
 
 class HomeViewController: UIViewController, GMSMapViewDelegate {
     
-    fileprivate var manager: HomeManager!
+    fileprivate var manager = HomeManager()
     fileprivate var mapView: GMSMapView!
     
     //MARK:- App Life Cycle Method
@@ -37,8 +37,8 @@ class HomeViewController: UIViewController, GMSMapViewDelegate {
         view = self.mapView
         self.mapView.delegate = self
         
-        self.manager = HomeManager.init()
         self.manager.delegate = self
+        self.manager.requestToPSIApi()
     }
     
     func addMarkersOnMap(){
@@ -92,6 +92,6 @@ extension HomeViewController : HomeManagerDelegate {
     }
     
     @objc internal func didUpdateErrorWithAlert( error: String){
-        //show error
+        self.showAlertPopUp(message: error)
     }
 }

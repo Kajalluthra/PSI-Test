@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		4B6B2383DA3C22793851620C /* Pods_PSITestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA75673889CF325D4E29E2D /* Pods_PSITestTests.framework */; };
 		9E0F268F2090815800DEF3A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F268E2090815800DEF3A3 /* Constants.swift */; };
-		9E0F2692209084B800DEF3A3 /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F2691209084B800DEF3A3 /* HomeManager.swift */; };
 		9E0F26942090851C00DEF3A3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F26932090851C00DEF3A3 /* APIManager.swift */; };
 		9E0F269720908FD300DEF3A3 /* PSIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F269620908FD300DEF3A3 /* PSIModel.swift */; };
 		9E0F269A20909CD900DEF3A3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F269920909CD900DEF3A3 /* LoadingView.swift */; };
 		9E0F269C20909D1800DEF3A3 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F269B20909D1800DEF3A3 /* LoadingView.xib */; };
 		9E0F269E2090AF6400DEF3A3 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F269D2090AF6400DEF3A3 /* MarkerView.swift */; };
 		9E0F26A02090AF7300DEF3A3 /* MarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F269F2090AF7300DEF3A3 /* MarkerView.xib */; };
+		9E0F26A22090B1B400DEF3A3 /* UIAlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F26A12090B1B400DEF3A3 /* UIAlertExtension.swift */; };
+		9E0F26A42090BA9D00DEF3A3 /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F2691209084B800DEF3A3 /* HomeManager.swift */; };
 		9E7B3B1B20907115006C7205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1A20907115006C7205 /* AppDelegate.swift */; };
 		9E7B3B1D20907115006C7205 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1C20907115006C7205 /* HomeViewController.swift */; };
 		9E7B3B2020907115006C7205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1E20907115006C7205 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		9E0F269B20909D1800DEF3A3 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		9E0F269D2090AF6400DEF3A3 /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
 		9E0F269F2090AF7300DEF3A3 /* MarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkerView.xib; sourceTree = "<group>"; };
+		9E0F26A12090B1B400DEF3A3 /* UIAlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertExtension.swift; sourceTree = "<group>"; };
 		9E7B3B1720907115006C7205 /* PSITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7B3B1A20907115006C7205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E7B3B1C20907115006C7205 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				9E0F268E2090815800DEF3A3 /* Constants.swift */,
+				9E0F26A12090B1B400DEF3A3 /* UIAlertExtension.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -385,12 +388,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E0F269E2090AF6400DEF3A3 /* MarkerView.swift in Sources */,
-				9E0F2692209084B800DEF3A3 /* HomeManager.swift in Sources */,
 				9E7B3B1D20907115006C7205 /* HomeViewController.swift in Sources */,
 				9E0F26942090851C00DEF3A3 /* APIManager.swift in Sources */,
 				9E7B3B1B20907115006C7205 /* AppDelegate.swift in Sources */,
+				9E0F26A42090BA9D00DEF3A3 /* HomeManager.swift in Sources */,
 				9E0F269720908FD300DEF3A3 /* PSIModel.swift in Sources */,
 				9E0F269A20909CD900DEF3A3 /* LoadingView.swift in Sources */,
+				9E0F26A22090B1B400DEF3A3 /* UIAlertExtension.swift in Sources */,
 				9E0F268F2090815800DEF3A3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

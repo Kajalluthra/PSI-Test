@@ -27,7 +27,6 @@ class HomeManager: NSObject {
     
     override init() {
         super.init()
-        requestToPSIApi()
     }
     
     // MARK:- Private Methods
