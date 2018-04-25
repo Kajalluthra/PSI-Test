@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="10u-gv-vtz" customClass="MarkerView" customModule="PSITest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="225" height="259"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZN-mT-y8f">
+                    <rect key="frame" x="1" y="1" width="223" height="257"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4B-pg-t9i">
+                            <rect key="frame" x="8" y="40" width="208" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Readings:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywb-PQ-oGF">
+                            <rect key="frame" x="8" y="16" width="182" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="hjW-4P-sAy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAL-7q-asV">
+                            <rect key="frame" x="198" y="5" width="19" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19" id="OgQ-AZ-5N0"/>
+                                <constraint firstAttribute="width" constant="19" id="aGX-iy-ekv"/>
+                            </constraints>
+                            <state key="normal" image="cross"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="j4B-pg-t9i" firstAttribute="top" secondItem="Ywb-PQ-oGF" secondAttribute="bottom" constant="3" id="CvM-1X-Fi3"/>
+                        <constraint firstAttribute="trailing" secondItem="mAL-7q-asV" secondAttribute="trailing" constant="6" id="SPe-5d-Pbx"/>
+                        <constraint firstItem="Ywb-PQ-oGF" firstAttribute="top" secondItem="LZN-mT-y8f" secondAttribute="top" constant="16" id="TXt-JF-xJQ"/>
+                        <constraint firstAttribute="trailing" secondItem="j4B-pg-t9i" secondAttribute="trailing" constant="7" id="VqT-J1-1eU"/>
+                        <constraint firstItem="mAL-7q-asV" firstAttribute="top" secondItem="LZN-mT-y8f" secondAttribute="top" constant="5" id="Wwv-nJ-vxN"/>
+                        <constraint firstItem="Ywb-PQ-oGF" firstAttribute="leading" secondItem="LZN-mT-y8f" secondAttribute="leading" constant="8" id="YF8-eF-Bcn"/>
+                        <constraint firstItem="j4B-pg-t9i" firstAttribute="leading" secondItem="LZN-mT-y8f" secondAttribute="leading" constant="8" id="fV1-a6-3UW"/>
+                        <constraint firstAttribute="trailing" secondItem="Ywb-PQ-oGF" secondAttribute="trailing" constant="33" id="ppq-VN-Fin"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98823529409999999" green="0.36078431370000003" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Cqc-Hn-LHS" firstAttribute="bottom" secondItem="LZN-mT-y8f" secondAttribute="bottom" constant="1" id="FIW-nN-LDn"/>
+                <constraint firstItem="Cqc-Hn-LHS" firstAttribute="trailing" secondItem="LZN-mT-y8f" secondAttribute="trailing" constant="1" id="QVN-ir-xXg"/>
+                <constraint firstItem="LZN-mT-y8f" firstAttribute="top" secondItem="Cqc-Hn-LHS" secondAttribute="top" constant="1" id="otU-fx-3P7"/>
+                <constraint firstItem="LZN-mT-y8f" firstAttribute="leading" secondItem="Cqc-Hn-LHS" secondAttribute="leading" constant="1" id="v42-B2-P6r"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Cqc-Hn-LHS"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="labelInfo" destination="j4B-pg-t9i" id="NhF-ut-mTs"/>
+                <outlet property="labelName" destination="Ywb-PQ-oGF" id="T5w-Jh-gdk"/>
+            </connections>
+            <point key="canvasLocation" x="-24.5" y="-59.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cross" width="16" height="16"/>
+    </resources>
+</document>

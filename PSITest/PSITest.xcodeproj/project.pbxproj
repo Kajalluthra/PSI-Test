@@ -14,6 +14,8 @@
 		9E0F269720908FD300DEF3A3 /* PSIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F269620908FD300DEF3A3 /* PSIModel.swift */; };
 		9E0F269A20909CD900DEF3A3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F269920909CD900DEF3A3 /* LoadingView.swift */; };
 		9E0F269C20909D1800DEF3A3 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F269B20909D1800DEF3A3 /* LoadingView.xib */; };
+		9E0F269E2090AF6400DEF3A3 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0F269D2090AF6400DEF3A3 /* MarkerView.swift */; };
+		9E0F26A02090AF7300DEF3A3 /* MarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F269F2090AF7300DEF3A3 /* MarkerView.xib */; };
 		9E7B3B1B20907115006C7205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1A20907115006C7205 /* AppDelegate.swift */; };
 		9E7B3B1D20907115006C7205 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1C20907115006C7205 /* HomeViewController.swift */; };
 		9E7B3B2020907115006C7205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E7B3B1E20907115006C7205 /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 		9E0F269620908FD300DEF3A3 /* PSIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIModel.swift; sourceTree = "<group>"; };
 		9E0F269920909CD900DEF3A3 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		9E0F269B20909D1800DEF3A3 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		9E0F269D2090AF6400DEF3A3 /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		9E0F269F2090AF7300DEF3A3 /* MarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkerView.xib; sourceTree = "<group>"; };
 		9E7B3B1720907115006C7205 /* PSITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7B3B1A20907115006C7205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E7B3B1C20907115006C7205 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 			children = (
 				9E0F269920909CD900DEF3A3 /* LoadingView.swift */,
 				9E0F269B20909D1800DEF3A3 /* LoadingView.xib */,
+				9E0F269D2090AF6400DEF3A3 /* MarkerView.swift */,
+				9E0F269F2090AF7300DEF3A3 /* MarkerView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 			files = (
 				9E7B3B2520907115006C7205 /* LaunchScreen.storyboard in Resources */,
 				9E0F269C20909D1800DEF3A3 /* LoadingView.xib in Resources */,
+				9E0F26A02090AF7300DEF3A3 /* MarkerView.xib in Resources */,
 				9E7B3B2220907115006C7205 /* Assets.xcassets in Resources */,
 				9E7B3B2020907115006C7205 /* Main.storyboard in Resources */,
 			);
@@ -377,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E0F269E2090AF6400DEF3A3 /* MarkerView.swift in Sources */,
 				9E0F2692209084B800DEF3A3 /* HomeManager.swift in Sources */,
 				9E7B3B1D20907115006C7205 /* HomeViewController.swift in Sources */,
 				9E0F26942090851C00DEF3A3 /* APIManager.swift in Sources */,

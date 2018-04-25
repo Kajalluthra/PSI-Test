@@ -50,6 +50,8 @@ class HomeViewController: UIViewController, GMSMapViewDelegate {
             let marker = GMSMarker()
             marker.position = coordinates
             marker.icon = UIImage(named: "pin")
+            marker.title = pins.name?.uppercased()
+            marker.snippet = self.manager.setupMarkerDescription(pins: pins)
             marker.appearAnimation = GMSMarkerAnimation.pop
             
             marker.map = mapView
@@ -57,16 +59,29 @@ class HomeViewController: UIViewController, GMSMapViewDelegate {
         }
     }
     
+    //create custom info window
+    func showMarkerDetailsView(marker: GMSMarker) -> UIView {
+        
+        let markerView = UINib(nibName: "MarkerView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! MarkerView
+        markerView.labelName.text = marker.title
+        markerView.labelInfo.text = marker.snippet
+        
+        return markerView
+    }
+    
 }
+
 
 //MARK:- GMSMapViewDelegate
 extension HomeViewController {
-    /*
+    
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
+        return self.showMarkerDetailsView(marker: marker)
     }
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
-    }*/
+        self.mapView.selectedMarker = nil
+    }
 }
 
 //MARK:- HomeViewController Protocol Method
